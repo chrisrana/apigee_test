@@ -1,24 +1,17 @@
 openapi: 3.0.1
 info:
-  title: defaultTitle
-  description: defaultDescription
-  version: '0.1'
+    title: defaultTitle
+    description: defaultDescription
+    version: '0.1'
 servers:
-  - url: 'http://ec2-13-233-86-100.ap-south-1.compute.amazonaws.com:8082'
+    -
+        url: 'http://ec2-13-233-86-100.ap-south-1.compute.amazonaws.com:8082'
 paths:
-  /data-service/data-collection:
-    get:
-      description: Auto generated using Swagger Inspector
-      parameters:
-        - name: orgId
-          in: query
-          schema:
-            type: string
-          example: f6476ec7-b4ad-431e-9dc6-bd314464c31a
-      responses:
-        default:
-          description: Auto generated using Swagger Inspector
-      servers:
-        - url: 'http://ec2-13-233-86-100.ap-south-1.compute.amazonaws.com:8082'
-    servers:
-      - url: 'http://ec2-13-233-86-100.ap-south-1.compute.amazonaws.com:8082'
+    /data-service/data-collection:
+        get:
+            description: 'Auto generated using Swagger Inspector'
+            parameters: [{name: orgId, in: query, schema: {type: string}, example: f6476ec7-b4ad-431e-9dc6-bd314464c31a}]
+            responses: {default: {description: 'Auto generated using Swagger Inspector'}}
+            servers: [{url: 'http://ec2-13-233-86-100.ap-south-1.compute.amazonaws.com:8082'}]
+        servers:
+            - {url: 'http://ec2-13-233-86-100.ap-south-1.compute.amazonaws.com:8082'}
