@@ -1,0 +1,17 @@
+swagger: '2.0'
+info:
+  description: defaultDescription
+  version: '0.1'
+  title: defaultTitle
+paths:
+  /data-service/data-collection:
+    get:
+      parameters:
+        - name: orgId
+          in: query
+          required: false
+          type: string
+          x-example: f6476ec7-b4ad-431e-9dc6-bd314464c31a
+      responses:
+        default:
+          description: Definition generated from Swagger Inspector
