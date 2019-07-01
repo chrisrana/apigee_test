@@ -6,7 +6,7 @@ info:
 host: "prs5ghazm2.execute-api.ap-south-1.amazonaws.com"
 basePath: "/dev"
 schemes:
-- "http"
+- "https"
 paths:
   /data-service/file-metadata/tags:
     get:
