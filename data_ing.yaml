@@ -21,7 +21,7 @@ paths:
             Access-Control-Allow-Origin:
               type: "string"
       x-amazon-apigateway-integration:        
-		uri: "http://ec2-13-233-86-100.ap-south-1.compute.amazonaws.com:8082/data-service/file-metadata/tags"
+        uri: "http://ec2-13-233-86-100.ap-south-1.compute.amazonaws.com:8082/data-service/file-metadata/tags"
         responses:
           default:
             statusCode: "200"
